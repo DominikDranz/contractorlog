@@ -1,0 +1,62 @@
+<%= form_with(model: delivery_entry, local: true) do |form| %>
+  <% if delivery_entry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(delivery_entry.errors.count, "error") %> prohibited this delivery_entry from being saved:</h2>
+
+      <ul>
+      <% delivery_entry.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date, id: :delivery_entry_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :in %>
+    <%= form.datetime_select :in, id: :delivery_entry_in %>
+  </div>
+
+  <div class="field">
+    <%= form.label :out %>
+    <%= form.datetime_select :out, id: :delivery_entry_out %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company %>
+    <%= form.text_field :company, id: :delivery_entry_company %>
+  </div>
+
+  <div class="field">
+    <%= form.label :plate_vehicle %>
+    <%= form.text_field :plate_vehicle, id: :delivery_entry_plate_vehicle %>
+  </div>
+
+  <div class="field">
+    <%= form.label :plate_trailer %>
+    <%= form.text_field :plate_trailer, id: :delivery_entry_plate_trailer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :plate_state %>
+    <%= form.text_field :plate_state, id: :delivery_entry_plate_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :initials %>
+    <%= form.text_field :initials, id: :delivery_entry_initials %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pass_num %>
+    <%= form.text_field :pass_num, id: :delivery_entry_pass_num %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

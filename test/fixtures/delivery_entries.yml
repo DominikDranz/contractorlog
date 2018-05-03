@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-05-03
+  in: 2018-05-03 10:19:51
+  out: 2018-05-03 10:19:51
+  company: MyString
+  plate_vehicle: MyString
+  plate_trailer: MyString
+  plate_state: MyString
+  initials: MyString
+  pass_num: MyString
+
+two:
+  date: 2018-05-03
+  in: 2018-05-03 10:19:51
+  out: 2018-05-03 10:19:51
+  company: MyString
+  plate_vehicle: MyString
+  plate_trailer: MyString
+  plate_state: MyString
+  initials: MyString
+  pass_num: MyString

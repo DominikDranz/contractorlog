@@ -1,0 +1,2 @@
+class DeliveryEntry < ApplicationRecord
+end
