@@ -11,9 +11,9 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :date %>
-    <%= form.date_select :date, id: :delivery_entry_date %>
+    <%= form.date_select :date, id: :delivery_entry_date, :class => "form-control" %>
   </div>
 
   <div class="field">
@@ -26,37 +26,39 @@
     <%= form.datetime_select :out, id: :delivery_entry_out %>
   </div>
 
-  <div class="field">
+  <div class="field form-control form-control-lg">
     <%= form.label :company %>
     <%= form.text_field :company, id: :delivery_entry_company %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :plate_vehicle %>
-    <%= form.text_field :plate_vehicle, id: :delivery_entry_plate_vehicle %>
+    <%= form.text_field :plate_vehicle, id: :delivery_entry_plate_vehicle, :class=>
+    "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-control">
     <%= form.label :plate_trailer %>
     <%= form.text_field :plate_trailer, id: :delivery_entry_plate_trailer %>
   </div>
 
-  <div class="field">
+  <div class="field col-md-3 mb-3">
     <%= form.label :plate_state %>
-    <%= form.text_field :plate_state, id: :delivery_entry_plate_state %>
+    <%= form.text_field :plate_state, id: :delivery_entry_plate_state, :class=> "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field form-control form-control-sm">
     <%= form.label :initials %>
     <%= form.text_field :initials, id: :delivery_entry_initials %>
   </div>
 
-  <div class="field">
+  <div class="field form-control form-control-lg">
     <%= form.label :pass_num %>
     <%= form.text_field :pass_num, id: :delivery_entry_pass_num %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit :class=> "btn btn-primary"%>
   </div>
+
 <% end %>
